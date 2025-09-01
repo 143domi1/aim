@@ -1,0 +1,60 @@
+import os
+import requests
+
+apps = {
+    "Auryo" : "https://github.com/sneljo1/auryo/releases/download/v2.5.4/Auryo-2.5.4.AppImage",
+    "Audacity" : "https://github.com/audacity/audacity/releases/download/Audacity-3.7.5/audacity-linux-3.7.5-x64-22.04.AppImage"
+
+}
+
+
+
+home_directory = os.path.expanduser("~")
+appimage_directory = os.path.join(home_directory, "appimages")
+os.makedirs(appimage_directory, exist_ok=True)
+
+
+main = input("")
+if main == "aim install":
+    app=input("")
+    if app in apps:
+        url_download = apps[app]
+        filename = os.path.join(appimage_directory, url_download.split("/")[-1])
+        print("Downloading..(Don't worry if it takes a long time)")
+        response = requests.get(url_download, stream=True)
+        with open(filename, "wb") as f:
+            for chunk in response.iter_content(chunk_size=262144):
+                if chunk:
+                    f.write(chunk)
+        os.chmod(filename, 0o755)
+        print(f"{app}")
+    else: 
+        print(f"{app} does not exist.")
+elif main == "aim info":
+    print("AIM – AppImage Installer/Manager \nCopyright (c) 2025 143domi1 (Github username) \nLicensed under the GNU General Public License v3.0 (GPLv3) \nThis program is fully FOSS (Free and open source software). \nLicense details: https://github.com/143domi1/aim/blob/main/LICENSE")
+
+elif main == "aim list":
+    files = [f for f in os.listdir(appimage_directory) if os.path.isfile(os.path.join(appimage_directory, f))]
+    files.sort(key=lambda f: os.path.getmtime(os.path.join(appimage_directory, f)), reverse=True)
+    print("Installed AppImages: ")
+    for f in files:
+        print(f)
+elif main == "aim delete":
+    app_to_delete = input("")
+    file_to_delete = os.path.join(appimage_directory, app_to_delete)
+
+    if not os.path.exists(appimage_directory):
+        print("No Appimages exist")
+    if os.path.isfile(file_to_delete):
+        os.remove(file_to_delete)
+        print(f"{app_to_delete} has been deleted.")
+    else:
+        print(f"{app_to_delete} is not installed.")
+
+elif main == "aim help":
+    print("These are all the commands in aim: ")
+    print("aim install - Installs the specified app. To do this, run the command, press Enter, and then type the app’s name on the next line. ")
+    print("aim info - Gives information about aim.")
+    print("aim list - This command lists all appimage programs")
+    print("aim delete - Deletes the specified app. To do this, run the command, press Enter, and then type the app’s name on the next line.")
+    print("aim help - The help command ")
