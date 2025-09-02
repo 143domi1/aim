@@ -7,8 +7,21 @@ apps = {
     "Auryo" : "https://github.com/sneljo1/auryo/releases/download/v2.5.4/Auryo-2.5.4.AppImage",
     "Audacity" : "https://github.com/audacity/audacity/releases/download/Audacity-3.7.5/audacity-linux-3.7.5-x64-22.04.AppImage",
     "CPod" : "https://github.com/z-------------/CPod/releases/download/v1.28.2/CPod-1.28.2-x86_64.AppImage",
-
-
+    "Hypnos" : "https://hypnosplayer.org/download/beta6/Hypnos-nix-64bit-beta6_2019-07-14_b1.AppImage",
+    "Melodie" : "https://github.com/feugy/melodie/releases/download/v2.0.0/melodie-2.0.0-x86_64.AppImage",
+    "Pathephone" : "https://github.com/pathephone/pathephone-desktop/releases/download/v2.2.1/pathephone-desktop-2.2.1-x86_64.AppImage",
+    "Poddr" : "https://github.com/Sn8z/Poddr/releases/download/v2.1.0/Poddr-2.1.0.AppImage",
+    "QXGEdit" : "https://sourceforge.net/projects/qxgedit/files/qxgedit/1.0.1/qxgedit-1.0.1-2.1.x86_64.AppImage/download",
+    "QmidiNet" : "https://sourceforge.net/projects/qmidinet/files/qmidinet/1.0.1/qmidinet-1.0.1-2.1.x86_64.AppImage/download",
+    "Sharp Tunes" : "https://github.com/MD-AZMAL/Sharp-Tune/releases/download/v1.0.3/sharp-tune-1.0.3-x86_64.AppImage",
+    "Sonic Lineup" : "https://code.soundsoftware.ac.uk/attachments/download/2766/SonicLineup-1.1-x86_64.AppImage",
+    "Sonic Visualiser" : "https://code.soundsoftware.ac.uk/attachments/download/2880/SonicVisualiser-5.2.1-x86_64.AppImage",
+    "Swag Lyrics" : "https://github.com/srevinsaju/swaglyrics-appimage/releases/download/latest/swaglyrics-x86_64.AppImage",
+    "synthv1" : "https://sourceforge.net/projects/synthv1/files/synthv1/1.3.2/synthv1-jack-1.3.2-9.1.x86_64.AppImage/download",
+    "Unofficial Sonos Controller for Linux" : "https://github.com/pascalopitz/unoffical-sonos-controller-for-linux/releases/download/v0.4.0-rc1/sonos-controller-unofficial-0.4.0-rc1.AppImage",
+    "Unofficial Sonos Controller for Linux ARM64" : "https://github.com/pascalopitz/unoffical-sonos-controller-for-linux/releases/download/v0.4.0-rc1/sonos-controller-unofficial-0.4.0-rc1-arm64.AppImage",
+    "Unofficial Sonos Controller for Linux ARMV7l" : "https://github.com/pascalopitz/unoffical-sonos-controller-for-linux/releases/download/v0.4.0-rc1/sonos-controller-unofficial-0.4.0-rc1-armv7l.AppImage",
+    
 }
 
 aim_path = shutil.which("aim")
@@ -16,6 +29,7 @@ home_directory = os.path.expanduser("~")
 appimage_directory = os.path.join(home_directory, "appimages")
 os.makedirs(appimage_directory, exist_ok=True)
 aim_download = "https://raw.githubusercontent.com/143domi1/aim/refs/heads/main/aim"
+
 
 
 main = input("")
