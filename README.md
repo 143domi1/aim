@@ -22,3 +22,16 @@ and make it executable with this command:
 <br>
 `chmod +x /usr/local/bin/aim`
 
+## How to upgrade Aim
+Currently **AIM** only supports upgrading it self with this command:
+<br>
+`aim upgrade`
+<br>
+## **Note**
+<br>
+If your AIM file is corrupt or you changed something
+<br>
+
+`aim upgrade`
+<br>
+will overwrite the file with the latest version
