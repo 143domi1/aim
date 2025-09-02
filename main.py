@@ -12,7 +12,6 @@ apps = {
 }
 
 aim_path = shutil.which("aim")
-print(f"{aim_path}")
 home_directory = os.path.expanduser("~")
 appimage_directory = os.path.join(home_directory, "appimages")
 os.makedirs(appimage_directory, exist_ok=True)
