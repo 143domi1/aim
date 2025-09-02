@@ -37,7 +37,7 @@ apps = {
     "Blender" : "https://github.com/Lethja/blender-appimage/releases/download/2025-08-21/blender-4.5.2-x86_64.AppImage.zip",
     "Blender LTS" : "https://github.com/Lethja/blender-appimage/releases/download/2025-08-21/blender-4.2.13-x86_64.AppImage.zip",
     "Gimp" : "https://download.gimp.org/gimp/v3.0/linux/GIMP-3.0.4-x86_64.AppImage",
-    "Gimp ARM" : "https://download.gimp.org/gimp/v3.0/linux/GIMP-3.0.4-aarch64.AppImage",
+    "Gimp ARM64" : "https://download.gimp.org/gimp/v3.0/linux/GIMP-3.0.4-aarch64.AppImage",
     "Krita" : "https://download.kde.org/stable/krita/5.2.11/krita-5.2.11-x86_64.AppImage",
     "Krita Plus Nightly" : "https://cdn.kde.org/ci-builds/graphics/krita/krita-5.2/linux/krita-5.2.11-prealpha-135186cdd4-x86_64.AppImage",
     "Firefox" : "https://github.com/srevinsaju/Firefox-Appimage/releases/download/firefox/firefox-142.0.r20250827004350-x86_64.AppImage",
@@ -53,6 +53,24 @@ apps = {
     "Brave" : "https://github.com/srevinsaju/Brave-AppImage/releases/download/v1.82.159/Brave-stable-v1.82.159-x86_64.AppImage",
     "htop" : "https://github.com/henry-hsieh/htop.appimage/releases/download/v3.3.0/Htop-x86_64.AppImage",
     "Visual Studio Code" : "https://github.com/valicm/VSCode-AppImage/releases/download/latest/VSCode-x86_64.AppImage",
+    "Zen" : "https://github.com/zen-browser/desktop/releases/download/1.15.2b/zen-x86_64.AppImage",
+    "Zen ARM" : "https://github.com/zen-browser/desktop/releases/download/1.15.2b/zen-aarch64.AppImage",
+    "LibreWolf" : "https://gitlab.com/api/v4/projects/24386000/packages/generic/librewolf/142.0.1-1/LibreWolf.x86_64.AppImage",
+    "LibreWolf ARM" : "https://gitlab.com/api/v4/projects/24386000/packages/generic/librewolf/142.0.1-1/LibreWolf.aarch64.AppImage",
+    "Floorp" : "https://github.com/Portable-Linux-Apps/floorp-AppImage/releases/download/v12.1.3%402025-09-01_1756743432/Floorp-v12.1.3-x86_64.AppImage",
+    "Floorp Nightly"  : "https://github.com/Portable-Linux-Apps/floorp-AppImage/releases/download/nightly/Floorp-v12.1.3-x86_64.AppImage",
+    "Palemoon" : "https://github.com/Portable-Linux-Apps/palemoon-AppImage/releases/download/33.8.2%402025-09-01_1756744100/Pale_Moon-33.8.2-x86_64.AppImage",
+    "Mullvad" : "https://github.com/Portable-Linux-Apps/mullvad-browser-AppImage/releases/download/14.5.6%402025-09-01_1756743924/Mullvad_Browser-14.5.6-x86_64.AppImage",
+    "Lapce" : "https://github.com/Portable-Linux-Apps/lapce-AppImage/releases/download/v0.4.4%402025-09-01_1756743889/Lapce-v0.4.4-x86_64.AppImage",
+    "Lapce ARM" : "https://github.com/Portable-Linux-Apps/lapce-AppImage/releases/download/v0.4.4%402025-09-01_1756743889/Lapce-v0.4.4-aarch64.AppImage",
+    "Ruffle" : "https://github.com/Portable-Linux-Apps/ruffle-AppImage/releases/download/nightly-2025-09-01%402025-09-01_1756743595/Ruffle-nightly-2025-09-01-x86_64.AppImage",
+    "Waterfox" : "https://github.com/Portable-Linux-Apps/Waterfox-AppImage/releases/download/140.3.0%402025-09-01_1756743590/Waterfox-140.3.0-x86_64.AppImage",
+    "Telegram"  : "https://github.com/Portable-Linux-Apps/Telegram-AppImage/releases/download/v6.1.0%402025-09-01_1756743380/Telegram-v6.1.0-x86_64.AppImage",
+    "Fastfetch" : "https://github.com/Portable-Linux-Apps/fastfetch-AppImage/releases/download/2.51.1%402025-09-01_1756743263/fastfetch-2.51.1-x86_64.AppImage",
+    "Fastfetch ARM" : "https://github.com/Portable-Linux-Apps/fastfetch-AppImage/releases/download/2.51.1%402025-09-01_1756743263/fastfetch-2.51.1-aarch64.AppImage",
+    "Lorien" : "https://github.com/Portable-Linux-Apps/Lorien-AppImage/releases/download/v0.6.0%402025-09-01_1756743231/Lorien-v0.6.0-x86_64.AppImage",
+    "IceCat" : "https://github.com/Portable-Linux-Apps/IceCat-AppImage/releases/download/128.14.0%402025-09-01_1756742510/IceCat-128.14.0-x86_64.AppImage",
+
 }
 
 aim_path = shutil.which("aim")
@@ -111,7 +129,7 @@ elif main == "aim upgrade":
         user_path = os.path.expanduser("~/.local/bin/aim")
         global_path = "/usr/local/bin/aim"
         if aim_path == global_path :
-            with open(global_path, wb) as f:
+            with open(global_path, "wb") as f:
                 for chunk in upgrade_aim.iter_content(chunk_size=262144):
                     if chunk:
                         f.write(chunk)
