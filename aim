@@ -126,7 +126,7 @@ if main == "aim install":
             print("Downloading..(Don't worry if it takes a long time)")
             response = requests.get(url_download, stream=True)
             with open(filename, "wb") as f:
-                for chunk in response.iter_content(chunk_size=262144):
+                for chunk in response.iter_content(chunk_size=524288):
                     if chunk:
                         f.write(chunk)
             os.chmod(filename, 0o755)
