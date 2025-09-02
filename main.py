@@ -1,20 +1,22 @@
 #!/usr/bin/env python3
 import os
 import requests
+import shutil
 
 apps = {
     "Auryo" : "https://github.com/sneljo1/auryo/releases/download/v2.5.4/Auryo-2.5.4.AppImage",
     "Audacity" : "https://github.com/audacity/audacity/releases/download/Audacity-3.7.5/audacity-linux-3.7.5-x64-22.04.AppImage",
     "CPod" : "https://github.com/z-------------/CPod/releases/download/v1.28.2/CPod-1.28.2-x86_64.AppImage",
-    
+
 
 }
 
-
-
+aim_path = shutil.which("aim")
+print(f"{aim_path}")
 home_directory = os.path.expanduser("~")
 appimage_directory = os.path.join(home_directory, "appimages")
 os.makedirs(appimage_directory, exist_ok=True)
+aim_download = "https://raw.githubusercontent.com/143domi1/aim/refs/heads/main/aim"
 
 
 main = input("")
@@ -56,6 +58,28 @@ elif main == "aim delete":
         print(f"{app_to_delete} has been deleted.")
     else:
         print(f"{app_to_delete} is not installed.")
+elif main == "aim upgrade":
+    print("Upgrading aim..")
+    if aim_path is None:
+        print("Aim not found in path")
+    else:
+        upgrade_aim = requests.get(aim_download, stream=True)
+        user_path = os.path.expanduser("~/.local/bin/aim")
+        global_path = "/usr/local/bin/aim"
+        if aim_path == global_path :
+            with open(global_path, wb) as f:
+                for chunk in upgrade_aim.iter_content(chunk_size=262144):
+                    if chunk:
+                        f.write(chunk)
+            os.chmod(global_path, 0o755)
+            print(f"Aim has been upgraded.")
+        elif aim_path == user_path:
+            with open(user_path, "wb") as f:
+                for chunk in upgrade_aim.iter_content(chunk_size=262144):
+                    if chunk:
+                        f.write(chunk)
+            os.chmod(user_path, 0o755)
+            print("Aim has been upgraded")
 
 elif main == "aim help":
     print("These are all the commands in aim: ")
@@ -63,4 +87,5 @@ elif main == "aim help":
     print("aim info - Gives information about aim.")
     print("aim list - This command lists all appimage programs")
     print("aim delete - Deletes the specified app. To do this, run the command, press Enter, and then type the app’s name on the next line.")
+    print("aim upgrade - This command upgrades aim on your system")
     print("aim help - The help command ")
