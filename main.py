@@ -111,7 +111,7 @@ elif main == "aim upgrade":
         user_path = os.path.expanduser("~/.local/bin/aim")
         global_path = "/usr/local/bin/aim"
         if aim_path == global_path :
-            with open(global_path, wb) as f:
+            with open(global_path, "wb") as f:
                 for chunk in upgrade_aim.iter_content(chunk_size=262144):
                     if chunk:
                         f.write(chunk)
