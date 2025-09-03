@@ -115,10 +115,11 @@ aim_download = "https://raw.githubusercontent.com/143domi1/aim/refs/heads/main/a
 
 
 command = sys.argv[1]
-app = sys.argv[2]
+
 
 print(f"{command}")
 if command == "install":
+    app = sys.argv[2]
     if app in apps:
         url_download = apps[app]
         filename = os.path.join(appimage_directory, url_download.split("/")[-1])
@@ -145,6 +146,7 @@ elif command == "list":
     for f in files:
         print(f)
 elif command == "delete":
+    app = sys.argv[2]
     app_to_delete = app
     file_to_delete = os.path.join(appimage_directory, app_to_delete)
 
