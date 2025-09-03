@@ -105,7 +105,10 @@ apps = {
     "Modrinth" : "https://launcher-files.modrinth.com/versions/0.10.7/linux/Modrinth%20App_0.10.7_amd64.AppImage",
     "Prism luncher" : "https://github.com/PrismLauncher/PrismLauncher/releases/download/9.4/PrismLauncher-Linux-x86_64.AppImage",
     "Steam" : "https://github.com/ivan-hc/Steam-appimage/releases/download/1.0.0.82-2%402025-09-01_1756708218/Steam-1.0.0.82-2-anylinux-x86_64.AppImage",
-}
+    "Microsoft Edge" : "https://github.com/ivan-hc/MS-Edge-appimage/releases/download/continuous/Microsoft-Edge-stable-139.0.3405.125-1-x86_64.AppImage",
+    "Microsoft Edge Beta" : "https://github.com/ivan-hc/MS-Edge-appimage/releases/download/continuous/Microsoft-Edge-beta-140.0.3485.40-1-x86_64.AppImage",
+    "Microsoft Edge Dev" : "https://github.com/ivan-hc/MS-Edge-appimage/releases/download/continuous/Microsoft-Edge-dev-141.0.3514.0-1-x86_64.AppImage",
+    }
 
 aim_path = shutil.which("aim")
 home_directory = os.path.expanduser("~")
