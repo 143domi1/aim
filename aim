@@ -108,6 +108,11 @@ apps = {
     "Microsoft Edge" : "https://github.com/ivan-hc/MS-Edge-appimage/releases/download/continuous/Microsoft-Edge-stable-139.0.3405.125-1-x86_64.AppImage",
     "Microsoft Edge Beta" : "https://github.com/ivan-hc/MS-Edge-appimage/releases/download/continuous/Microsoft-Edge-beta-140.0.3485.40-1-x86_64.AppImage",
     "Microsoft Edge Dev" : "https://github.com/ivan-hc/MS-Edge-appimage/releases/download/continuous/Microsoft-Edge-dev-141.0.3514.0-1-x86_64.AppImage",
+    "Vivaldi" : "https://github.com/ivan-hc/Vivaldi-appimage/releases/download/continuous/Vivaldi-stable-7.5.3735.66-1-x86_64.AppImage",
+    "Vivaldi ARM" : "https://github.com/ivan-hc/Vivaldi-appimage/releases/download/continuous/Vivaldi-stable-7.5.3735.66-1-aarch64.AppImage",
+    "Vivaldi snapshot" : "https://github.com/ivan-hc/Vivaldi-appimage/releases/download/continuous/Vivaldi-snapshot-7.6.3794.4-1-x86_64.AppImage",
+    "Vivaldi snapshot ARM" : "https://github.com/ivan-hc/Vivaldi-appimage/releases/download/continuous/Vivaldi-snapshot-7.6.3794.4-1-aarch64.AppImage",
+    
     }
 
 aim_path = shutil.which("aim")
