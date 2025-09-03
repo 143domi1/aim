@@ -2,6 +2,7 @@
 import os
 import requests
 import shutil
+import sys
 
 apps = {
     "Auryo" : "https://github.com/sneljo1/auryo/releases/download/v2.5.4/Auryo-2.5.4.AppImage",
@@ -113,10 +114,11 @@ os.makedirs(appimage_directory, exist_ok=True)
 aim_download = "https://raw.githubusercontent.com/143domi1/aim/refs/heads/main/aim"
 
 
+command = sys.argv[1]
+app = sys.argv[2]
 
-main = input("")
-if main == "aim install":
-    app=input("")
+print(f"{command}")
+if command == "install":
     if app in apps:
         url_download = apps[app]
         filename = os.path.join(appimage_directory, url_download.split("/")[-1])
@@ -133,17 +135,17 @@ if main == "aim install":
             print(f"{app}")
     else: 
         print(f"{app} does not exist.")
-elif main == "aim info":
+elif command == "info":
     print("AIM – AppImage Installer/Manager \nCopyright (c) 2025 143domi1 (Github username) \nLicensed under the GNU General Public License v3.0 (GPLv3) \nThis program is fully FOSS (Free and open source software). \nLicense details: https://github.com/143domi1/aim/blob/main/LICENSE")
 
-elif main == "aim list":
+elif command == "list":
     files = [f for f in os.listdir(appimage_directory) if os.path.isfile(os.path.join(appimage_directory, f))]
     files.sort(key=lambda f: os.path.getmtime(os.path.join(appimage_directory, f)), reverse=True)
     print("Installed AppImages: ")
     for f in files:
         print(f)
-elif main == "aim delete":
-    app_to_delete = input("")
+elif command == "delete":
+    app_to_delete = app
     file_to_delete = os.path.join(appimage_directory, app_to_delete)
 
     if not os.path.exists(appimage_directory):
@@ -153,7 +155,7 @@ elif main == "aim delete":
         print(f"{app_to_delete} has been deleted.")
     else:
         print(f"{app_to_delete} is not installed.")
-elif main == "aim upgrade":
+elif command == "upgrade":
     print("Upgrading aim..")
     if aim_path is None:
         print("Aim not found in path")
@@ -176,11 +178,11 @@ elif main == "aim upgrade":
             os.chmod(user_path, 0o755)
             print("Aim has been upgraded")
 
-elif main == "aim help":
+elif command == "help":
     print("These are all the commands in aim: ")
-    print("aim install - Installs the specified app. To do this, run the command, press Enter, and then type the app’s name on the next line. ")
+    print("aim install - Installs the specified app. ")
     print("aim info - Gives information about aim.")
-    print("aim list - This command lists all appimage programs")
-    print("aim delete - Deletes the specified app. To do this, run the command, press Enter, and then type the app’s name on the next line.")
-    print("aim upgrade - This command upgrades aim on your system")
-    print("aim help - The help command ")
+    print("aim list - This command lists all appimage programs.")
+    print("aim delete - Deletes the specified app.")
+    print("aim upgrade - This command upgrades aim on your system.")
+    print("aim help - The help command.")
