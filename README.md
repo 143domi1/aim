@@ -35,3 +35,17 @@ If your AIM file is corrupt or you changed something
 `aim upgrade`
 <br>
 will overwrite the file with the latest version
+
+## How to Install Apps?
+To install apps via **AIM** , you need to type in 
+<br>
+`aim install {whateverappyouwant}`
+### Note:
+If the app’s name contains multiple words, make sure to put it in double quotes.
+<br>
+`aim install "Visual Studio Code"`
+
+## How to Delete apps
+To delete apps installed with **AIM**, you need to type in:
+<br>
+`aim delete {whateverappyouwantodelete.AppImage}`
