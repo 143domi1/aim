@@ -120,7 +120,7 @@ aim_download = "https://raw.githubusercontent.com/143domi1/aim/refs/heads/main/a
 command = sys.argv[1]
 
 
-print(f"{command}")
+
 if command == "install":
     app = sys.argv[2]
     if app in apps:
