@@ -49,3 +49,6 @@ If the app’s name contains multiple words, make sure to put it in double quote
 To delete apps installed with **AIM**, you need to type in:
 <br>
 `aim delete {whateverappyouwantodelete.AppImage}`
+
+## Where apps are stored?
+Apps installed via AIM are stored in your home/username/appimages directory.
