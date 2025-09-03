@@ -12,4 +12,6 @@ To **contribute**:
 
 4.Create a pull request back to this repo with your changes.
 
+5. And if your pull request is accepted , add your github username to the contributors.txt file at the end!
+
 We appreciate any help—big or small!
