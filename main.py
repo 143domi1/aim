@@ -65,7 +65,7 @@ apps = {
     "Google Chrome" : "https://github.com/ivan-hc/Chrome-appimage/releases/download/continuous/Google-Chrome-stable-140.0.7339.80-1-x86_64.AppImage",
     "Google Chrome Beta" : "https://github.com/ivan-hc/Chrome-appimage/releases/download/continuous/Google-Chrome-beta-140.0.7339.41-1-x86_64.AppImage",
     "Google Chrome Unstable" : "https://github.com/ivan-hc/Chrome-appimage/releases/download/continuous/Google-Chrome-unstable-141.0.7378.3-1-x86_64.AppImage",
-    "Brave Nightly" : "https://github.com/srevinsaju/Brave-AppImage/releases/download/v1.84.25/Brave-nightly-v1.84.25-x86_64.AppImage",
+    "Brave Nightly" : "https://github.com/srevinsaju/Brave-AppImage/releases/download/v1.84.26/Brave-nightly-v1.84.26-x86_64.AppImage",
     "Brave Beta" : "https://github.com/srevinsaju/Brave-AppImage/releases/download/v1.83.90/Brave-beta-v1.83.90-x86_64.AppImage",
     "Brave" : "https://github.com/srevinsaju/Brave-AppImage/releases/download/v1.82.159/Brave-stable-v1.82.159-x86_64.AppImage",
     "htop" : "https://github.com/henry-hsieh/htop.appimage/releases/download/v3.3.0/Htop-x86_64.AppImage",
