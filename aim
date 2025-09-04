@@ -126,8 +126,8 @@ apps = {
     "Microsoft Edge Dev" : "https://github.com/ivan-hc/MS-Edge-appimage/releases/download/continuous/Microsoft-Edge-dev-141.0.3525.0-1-x86_64.AppImage",
     "Vivaldi" : "https://github.com/ivan-hc/Vivaldi-appimage/releases/download/continuous/Vivaldi-stable-7.5.3735.66-1-x86_64.AppImage",
     "Vivaldi ARM" : "https://github.com/ivan-hc/Vivaldi-appimage/releases/download/continuous/Vivaldi-stable-7.5.3735.66-1-aarch64.AppImage",
-    "Vivaldi snapshot" : "https://github.com/ivan-hc/Vivaldi-appimage/releases/download/continuous/Vivaldi-snapshot-7.6.3796.28-1-x86_64.AppImage",
-    "Vivaldi snapshot ARM" : "https://github.com/ivan-hc/Vivaldi-appimage/releases/download/continuous/Vivaldi-snapshot-7.6.3796.28-1-aarch64.AppImage",
+    "Vivaldi snapshot" : "https://github.com/ivan-hc/Vivaldi-appimage/releases/download/continuous/Vivaldi-snapshot-7.6.3797.27-1-x86_64.AppImage",
+    "Vivaldi snapshot ARM" : "https://github.com/ivan-hc/Vivaldi-appimage/releases/download/continuous/Vivaldi-snapshot-7.6.3797.27-1-aarch64.AppImage",
     
     }
 
