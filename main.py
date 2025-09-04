@@ -1,8 +1,22 @@
 #!/usr/bin/env python3
-import os
-import requests
-import shutil
-import sys
+required_packages = ["os", "shutil", "sys", "platform", "subprocess", "requests"]
+try:
+    import os
+    import shutil
+    import sys
+    import platform
+    import subprocess
+    import requests
+except ImportError:
+    print("CRITICAL RUNTIME ERROR 5 - A critical libary is missing, this program requires the critical libary to be installed.\n What do you want to do?\n1.Let AIM download the required libary.\n2.Exit the program.")
+    answer  = input("")
+    if answer == "1":
+        print("Downloading..")
+        for package in required_packages:
+            subprocess.call(["pip", "install", package])
+    elif answer == "2":
+        sys.exit(1)
+
 
 apps = {
     "Auryo" : "https://github.com/sneljo1/auryo/releases/download/v2.5.4/Auryo-2.5.4.AppImage",
@@ -39,8 +53,10 @@ apps = {
     "Blender LTS" : "https://github.com/Lethja/blender-appimage/releases/download/2025-08-21/blender-4.2.13-x86_64.AppImage.zip",
     "Gimp" : "https://download.gimp.org/gimp/v3.0/linux/GIMP-3.0.4-x86_64.AppImage",
     "Gimp ARM64" : "https://download.gimp.org/gimp/v3.0/linux/GIMP-3.0.4-aarch64.AppImage",
+    "Gimp Development Edition" : "https://download.gimp.org/gimp/v3.1/linux/GIMP-3.1.4-x86_64.AppImage",
+    "Gimp Development Edition ARM" : "https://download.gimp.org/gimp/v3.1/linux/GIMP-3.1.4-x86_64.AppImage",
     "Krita" : "https://download.kde.org/stable/krita/5.2.11/krita-5.2.11-x86_64.AppImage",
-    "Krita Plus Nightly" : "https://cdn.kde.org/ci-builds/graphics/krita/krita-5.2/linux/krita-5.2.11-prealpha-135186cdd4-x86_64.AppImage",
+    "Krita Plus Nightly" : "https://cdn.kde.org/ci-builds/graphics/krita/krita-5.2/linux/krita-5.2.13-prealpha-4f376aba8d-x86_64.AppImage",
     "Firefox" : "https://github.com/srevinsaju/Firefox-Appimage/releases/download/firefox/firefox-142.0.r20250827004350-x86_64.AppImage",
     "Firefox Beta" : "https://github.com/srevinsaju/Firefox-Appimage/releases/download/firefox-beta/firefox-beta-143.0.r20250901090535-x86_64.AppImage",
     "Firefox Nightly" : "https://github.com/srevinsaju/Firefox-Appimage/releases/download/firefox-nightly/firefox-nightly-144.0.r20250902094807-x86_64.AppImage",
@@ -49,8 +65,8 @@ apps = {
     "Google Chrome" : "https://github.com/ivan-hc/Chrome-appimage/releases/download/continuous/Google-Chrome-stable-140.0.7339.80-1-x86_64.AppImage",
     "Google Chrome Beta" : "https://github.com/ivan-hc/Chrome-appimage/releases/download/continuous/Google-Chrome-beta-140.0.7339.41-1-x86_64.AppImage",
     "Google Chrome Unstable" : "https://github.com/ivan-hc/Chrome-appimage/releases/download/continuous/Google-Chrome-unstable-141.0.7378.3-1-x86_64.AppImage",
-    "Brave Nightly" : "https://github.com/srevinsaju/Brave-AppImage/releases/download/v1.84.20/Brave-nightly-v1.84.20-x86_64.AppImage",
-    "Brave Beta" : "https://github.com/srevinsaju/Brave-AppImage/releases/download/v1.83.88/Brave-beta-v1.83.88-x86_64.AppImage",
+    "Brave Nightly" : "https://github.com/srevinsaju/Brave-AppImage/releases/download/v1.84.25/Brave-nightly-v1.84.25-x86_64.AppImage",
+    "Brave Beta" : "https://github.com/srevinsaju/Brave-AppImage/releases/download/v1.83.90/Brave-beta-v1.83.90-x86_64.AppImage",
     "Brave" : "https://github.com/srevinsaju/Brave-AppImage/releases/download/v1.82.159/Brave-stable-v1.82.159-x86_64.AppImage",
     "htop" : "https://github.com/henry-hsieh/htop.appimage/releases/download/v3.3.0/Htop-x86_64.AppImage",
     "Visual Studio Code" : "https://github.com/valicm/VSCode-AppImage/releases/download/latest/VSCode-x86_64.AppImage",
@@ -77,7 +93,7 @@ apps = {
     "FireDragon ARM" : "https://gitlab.com/garuda-linux/firedragon/firedragon12/-/releases/v12.2.1/downloads/firedragon-appimage-arm64.AppImage",
     "InkScape" : "https://inkscape.org/gallery/item/56343/Inkscape-ebf0e94-x86_64.AppImage",
     "Kdenlive" : "https://download.kde.org/stable/kdenlive/25.08/linux/kdenlive-25.08.0-x86_64.AppImage",
-    "Kdenlive Daily" : "https://cdn.kde.org/ci-builds/multimedia/kdenlive/master/linux/kdenlive-master-10971-linux-gcc-x86_64.AppImage",
+    "Kdenlive Daily" : "https://cdn.kde.org/ci-builds/multimedia/kdenlive/master/linux/kdenlive-master-10989-linux-gcc-x86_64.AppImage",
     "Shotcut" : "https://downloads.sourceforge.net/project/shotcut/v25.08.16/shotcut-linux-x86_64-250816.AppImage?ts=gAAAAABotzMu37rX1sMTx3RYUY3fq936BVa2Oyg6OxDQNQI3dog6Fog7EphWlXbuTbwfkyl8QqVDpfBhxLCB22gk7xpPbD97Eg%3D%3D&r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fshotcut%2Ffiles%2Fv25.08.16%2Fshotcut-linux-x86_64-250816.AppImage%2Fdownload",
     "Openshot" : "https://github.com/OpenShot/openshot-qt/releases/download/v3.3.0/OpenShot-v3.3.0-x86_64.AppImage",
     "OBS Studio" : "https://github.com/pkgforge-dev/OBS-Studio-AppImage/releases/download/31.1.2-1%402025-09-01_1756711907/OBS-Studio-31.1.2-1-anylinux-x86_64.AppImage",
@@ -110,8 +126,8 @@ apps = {
     "Microsoft Edge Dev" : "https://github.com/ivan-hc/MS-Edge-appimage/releases/download/continuous/Microsoft-Edge-dev-141.0.3514.0-1-x86_64.AppImage",
     "Vivaldi" : "https://github.com/ivan-hc/Vivaldi-appimage/releases/download/continuous/Vivaldi-stable-7.5.3735.66-1-x86_64.AppImage",
     "Vivaldi ARM" : "https://github.com/ivan-hc/Vivaldi-appimage/releases/download/continuous/Vivaldi-stable-7.5.3735.66-1-aarch64.AppImage",
-    "Vivaldi snapshot" : "https://github.com/ivan-hc/Vivaldi-appimage/releases/download/continuous/Vivaldi-snapshot-7.6.3794.4-1-x86_64.AppImage",
-    "Vivaldi snapshot ARM" : "https://github.com/ivan-hc/Vivaldi-appimage/releases/download/continuous/Vivaldi-snapshot-7.6.3794.4-1-aarch64.AppImage",
+    "Vivaldi snapshot" : "https://github.com/ivan-hc/Vivaldi-appimage/releases/download/continuous/Vivaldi-snapshot-7.6.3796.28-1-x86_64.AppImage",
+    "Vivaldi snapshot ARM" : "https://github.com/ivan-hc/Vivaldi-appimage/releases/download/continuous/Vivaldi-snapshot-7.6.3796.28-1-aarch64.AppImage",
     
     }
 
@@ -122,12 +138,19 @@ os.makedirs(appimage_directory, exist_ok=True)
 aim_download = "https://raw.githubusercontent.com/143domi1/aim/refs/heads/main/aim"
 
 
-command = sys.argv[1]
-
+try:
+    command = sys.argv[1]
+except IndexError:
+    print("ERROR 1 - Please enter a command!\nIf you need help, please enter the help command")
+    sys.exit(1)
 
 
 if command == "install":
-    app = sys.argv[2]
+    try:
+        app = sys.argv[2]
+    except IndexError:
+        print("ERROR 1 - Please enter the app name!\nIf you need help, please enter the help command")
+        sys.exit(1)
     if app in apps:
         url_download = apps[app]
         filename = os.path.join(appimage_directory, url_download.split("/")[-1])
@@ -141,7 +164,7 @@ if command == "install":
                     if chunk:
                         f.write(chunk)
             os.chmod(filename, 0o755)
-            print(f"{app}")
+            print(f"{app} is stored in {filename}")
     else: 
         print(f"{app} does not exist.")
 elif command == "info":
@@ -154,7 +177,11 @@ elif command == "list":
     for f in files:
         print(f)
 elif command == "delete":
-    app = sys.argv[2]
+    try:
+        app = sys.argv[2]
+    except IndexError:
+        print("ERROR 1 - Please enter the app name!\nIf you need help, please enter the help command")
+        sys.exit(1)
     app_to_delete = app
     file_to_delete = os.path.join(appimage_directory, app_to_delete)
 
@@ -187,12 +214,30 @@ elif command == "upgrade":
                         f.write(chunk)
             os.chmod(user_path, 0o755)
             print("Aim has been upgraded")
+elif command == "applist":
+    question = input("Are you sure you want to see the whole applist of AIM?\ny - yes, n - no\n")
+    question.lower()
+    if question == "y":
+        for app in apps:
+            print(f"{app}")
+    elif question == "n":
+        sys.exit(0)
+elif command == "run":
+    app = sys.argv[2]
+    app_path = os.path.join(appimage_directory, app)
+    if os.path.isfile(app_path):
+        subprocess.Popen([app_path])
+    else:
+        print(f"ERROR 3 - {app} is not installed!")
 
 elif command == "help":
     print("These are all the commands in aim: ")
-    print("aim install - Installs the specified app. ")
+    print("aim install <appname> - Installs the specified app. ")
     print("aim info - Gives information about aim.")
     print("aim list - This command lists all appimage programs.")
-    print("aim delete - Deletes the specified app.")
+    print("aim delete <appname> - Deletes the specified app.")
     print("aim upgrade - This command upgrades aim on your system.")
+    print("aim applist - This command tells you all the apps currently available in AIM.")
+    print("aim run <appname> - This command allows you to run apps installed via aim.")
     print("aim help - The help command.")
+
