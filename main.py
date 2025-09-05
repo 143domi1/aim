@@ -167,11 +167,11 @@ apps = {
     },
     "Firefox ESR" :{
         "url": "https://github.com/srevinsaju/Firefox-Appimage/releases/download/firefox-esr-next/firefox-esr-next-102.3.r20220912135840-x86_64.AppImage",
-        "Verifed": "no"
+        "Verified": "no"
     },
     "Firefox Developer Edition" :{
         "url": "https://github.com/srevinsaju/Firefox-Appimage/releases/download/firefox-devedition/firefox-devedition-143.0.r20250901090535-x86_64.AppImage",
-        "Verifed": "no"
+        "Verified": "no"
     },
     "Google Chrome" :{
         "url": "https://github.com/ivan-hc/Chrome-appimage/releases/download/continuous/Google-Chrome-stable-140.0.7339.80-1-x86_64.AppImage",
@@ -441,7 +441,8 @@ apps = {
         "Verified": "no"
     },
     "Sayonara" :{
-        "url": "https://sayonara-player.com/files/appimage/sayonara-1.9.0-stable1-ge5e5dfc5.AppImage"
+        "url": "https://sayonara-player.com/files/appimage/sayonara-1.9.0-stable1-ge5e5dfc5.AppImage",
+        "Verified": "yes"
     },
 }
 
@@ -450,7 +451,7 @@ home_directory = os.path.expanduser("~")
 appimage_directory = os.path.join(home_directory, "appimages")
 os.makedirs(appimage_directory, exist_ok=True)
 aim_download = "https://raw.githubusercontent.com/143domi1/aim/refs/heads/main/aim"
-version = 0.3
+version = 0.4
 
 try:
     command = sys.argv[1]
@@ -466,50 +467,47 @@ if command == "install":
         print("ERROR 1 - Please enter the app name!\nIf you need help, please enter the help command")
         sys.exit(1)
     if app in apps:
-        arhitecture = platform.machine().lower()
-        if arhitecture == "x86_64":
+        architecture = platform.machine().lower()
+        if architecture == "x86_64":
             url_download = apps[app].get("url")
-        elif arhitecture == "amd64":
+        elif architecture == "amd64":
             url_download = apps[app].get("url")
-        elif arhitecture == "aarch64":
+        elif architecture == "aarch64":
             url_download = apps[app].get("arm64")
-        elif arhitecture == "armv7l":
+        elif architecture == "armv7l":
             url_download = apps[app].get("arm32")
-        elif arhitecture == "riscv64":
+        elif architecture == "riscv64":
             url_download = apps[app].get("risc-v")
         if url_download is None:
-            print(f"Sorry,{app} does not support the {arhitecture} arhitecture you are using.")
+            print(f"Sorry,{app} does not support the {architecture} architecture you are using.")
             sys.exit(1)
         filename = os.path.join(appimage_directory, url_download.split("/")[-1])
         if os.path.exists(filename):
             print(f"{app} is already installed.")
         else:
-            if apps[app]["Verified"] == "yes":
+            def app_download(url_download, filename, app):
                 print("Downloading..(Don't worry if it takes a long time)")
                 response = requests.get(url_download, stream=True)
                 with open(filename, "wb") as f:
-                    for chunk in response.iter_content(chunk_size=524288):
+                    for chunk in response.iter_content(chunk_size=1048576):
                         if chunk:
                             f.write(chunk)
                 os.chmod(filename, 0o755)
                 print(f"{app} is stored in {filename}")
+            if apps[app]["Verified"] == "yes":
+                app_download(url_download, filename, app)
             elif apps[app]["Verified"] == "no":
                 print(f"Warning, {app} is not verified by the AIM team, this means that this app has been repackaged by someone outside the original developers for the app!")
                 answer = input("Do you wish to continue?\ny - yes,n - no\n")
                 if answer == "y":
-                    print("Downloading..(Don't worry if it takes a long time)")
-                    response = requests.get(url_download, stream=True)
-                    with open(filename, "wb") as f:
-                        for chunk in response.iter_content(chunk_size=524288):
-                            if chunk:
-                                f.write(chunk)
-                    os.chmod(filename, 0o755)
-                    print(f"{app} is stored in {filename}")
+                    app_download(url_download, filename, app)
+                elif answer == "n":
+                    sys.exit(0)
     else: 
         print(f"{app} does not exist.")
 elif command == "info":
-    arhitecture = platform.machine()
-    print(f"AIM – AppImage Installer/Manager \nCopyright (c) 2025 143domi1 (Github username) \nLicensed under the GNU General Public License v3.0 (GPLv3) \nThis program is fully FOSS (Free and open source software). \nLicense details: https://github.com/143domi1/aim/blob/main/LICENSE\nVersion: {version}\nArhitecture: {arhitecture}")
+    architecture = platform.machine()
+    print(f"AIM – AppImage Installer/Manager \nCopyright (c) 2025 143domi1 (Github username) \nLicensed under the GNU General Public License v3.0 (GPLv3) \nThis program is fully FOSS (Free and open source software). \nLicense details: https://github.com/143domi1/aim/blob/main/LICENSE\nVersion: {version}\nArchitecture: {architecture}")
 
 elif command == "list":
     files = [f for f in os.listdir(appimage_directory) if os.path.isfile(os.path.join(appimage_directory, f))]
@@ -572,13 +570,5 @@ elif command == "run":
         print(f"ERROR 3 - {app} is not installed!")
 
 elif command == "help":
-    print("These are all the commands in aim: ")
-    print("aim install <appname> - Installs the specified app. ")
-    print("aim info - Gives information about aim.")
-    print("aim list - This command lists all appimage programs.")
-    print("aim delete <appname> - Deletes the specified app.")
-    print("aim upgrade - This command upgrades aim on your system.")
-    print("aim applist - This command tells you all the apps currently available in AIM.")
-    print("aim run <appname> - This command allows you to run apps installed via aim.")
-    print("aim help - The help command.")
+    print("These are all the commands in aim:\naim install <appname> - Installs the specified app.\naim info - Gives information about aim.\naim list - This command lists all appimage programs.\naim delete <appname> - Deletes the specified app.\naim upgrade - This command upgrades aim on your system.\naim applist - This command tells you all the apps currently available in AIM.\naim run <appname> - This command allows you to run apps installed via aim.\naim help - The help command.\n")
 
