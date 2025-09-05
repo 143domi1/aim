@@ -196,7 +196,7 @@ apps = {
         "Verified": "no"
     },
     "Google Chrome Beta" :{
-        "url": "https://github.com/ivan-hc/Chrome-appimage/releases/download/continuous/Google-Chrome-beta-140.0.7339.41-1-x86_64.AppImage",
+        "url": "https://github.com/ivan-hc/Chrome-appimage/releases/download/continuous/Google-Chrome-beta-141.0.7390.7-1-x86_64.AppImage",
         "Verified": "no"
     },
     "Google Chrome Unstable" :{
@@ -204,7 +204,7 @@ apps = {
         "Verified": "no"
     },
     "Brave Nightly" :{
-        "url": "https://github.com/srevinsaju/Brave-AppImage/releases/download/v1.84.26/Brave-nightly-v1.84.26-x86_64.AppImage",
+        "url": "https://github.com/srevinsaju/Brave-AppImage/releases/download/v1.84.29/Brave-nightly-v1.84.29-x86_64.AppImage",
         "Verified": "no"
     },
     "Brave Beta" :{
@@ -332,7 +332,7 @@ apps = {
         "Verified": "no"
     },
     "Virtual Box" :{
-        "url": "https://github.com/ivan-hc/VirtualBox-appimage/releases/download/7.1.6/VirtualBox-KVM_7.1.6-archimage4.3-x86_64.AppImage",
+        "url": "https://github.com/ivan-hc/VirtualBox-appimage/releases/download/20250904-142056/VirtualBox-KVM_7.2.0-archimage4.3-x86_64.AppImage",
         "Verified": "no"
     },
     "Discord" :{
@@ -463,7 +463,7 @@ home_directory = os.path.expanduser("~")
 appimage_directory = os.path.join(home_directory, "appimages")
 os.makedirs(appimage_directory, exist_ok=True)
 aim_download = "https://raw.githubusercontent.com/143domi1/aim/refs/heads/main/aim"
-
+version = 0.2
 
 try:
     command = sys.argv[1]
@@ -508,7 +508,7 @@ if command == "install":
     else: 
         print(f"{app} does not exist.")
 elif command == "info":
-    print("AIM – AppImage Installer/Manager \nCopyright (c) 2025 143domi1 (Github username) \nLicensed under the GNU General Public License v3.0 (GPLv3) \nThis program is fully FOSS (Free and open source software). \nLicense details: https://github.com/143domi1/aim/blob/main/LICENSE")
+    print(f"AIM – AppImage Installer/Manager \nCopyright (c) 2025 143domi1 (Github username) \nLicensed under the GNU General Public License v3.0 (GPLv3) \nThis program is fully FOSS (Free and open source software). \nLicense details: https://github.com/143domi1/aim/blob/main/LICENSE\nVersion: {version}")
 
 elif command == "list":
     files = [f for f in os.listdir(appimage_directory) if os.path.isfile(os.path.join(appimage_directory, f))]
