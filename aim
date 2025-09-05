@@ -366,7 +366,7 @@ apps = {
     },
 
     "Wireshark" :{
-        "url": "https://github.com/ryuuzaki42/Wireshark_AppImage/releases/download/4.4.8/Wireshark-4.4.8.glibc2.29-x86_64-1_JB.AppImage",
+        "url": "https://github.com/ryuuzaki42/Wireshark_AppImage/releases/download/4.4.9/Wireshark-4.4.9.glibc2.29-x86_64-1_JB.AppImage",
         "Verified": "no"
     },
     "nmap" :{
