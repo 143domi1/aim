@@ -77,15 +77,9 @@ apps = {
     },
     "Unofficial Sonos Controller for Linux" :{
         "url": "https://github.com/pascalopitz/unoffical-sonos-controller-for-linux/releases/download/v0.4.0-rc1/sonos-controller-unofficial-0.4.0-rc1.AppImage",
-        "Verified": "no"
-    },
-    "Unofficial Sonos Controller for Linux ARM64" :{
-        "url": "https://github.com/pascalopitz/unoffical-sonos-controller-for-linux/releases/download/v0.4.0-rc1/sonos-controller-unofficial-0.4.0-rc1-arm64.AppImage",
-        "Verified": "no"
-    },
-    "Unofficial Sonos Controller for Linux ARMV7l" :{
-        "url": "https://github.com/pascalopitz/unoffical-sonos-controller-for-linux/releases/download/v0.4.0-rc1/sonos-controller-unofficial-0.4.0-rc1-armv7l.AppImage",
-        "Verified": "no"
+        "Verified": "no",
+        "arm64": "https://github.com/pascalopitz/unoffical-sonos-controller-for-linux/releases/download/v0.4.0-rc1/sonos-controller-unofficial-0.4.0-rc1-arm64.AppImage",
+        "arm32": "https://github.com/pascalopitz/unoffical-sonos-controller-for-linux/releases/download/v0.4.0-rc1/sonos-controller-unofficial-0.4.0-rc1-armv7l.AppImage"
     },
     "Blowfish" :{
         "url": "https://github.com/kremalicious/blowfish/releases/download/v1.6.0/Blowfish-1.6.0.AppImage",
@@ -125,19 +119,13 @@ apps = {
     },
     "Gospel Pdf viewer" :{
         "url": "https://github.com/ksharindam/gospel-pdf-viewer/releases/download/v3.2.0/Gospel_PDF-x86_64.AppImage",
-        "Verified": "no"
-    },
-    "Gospel Pdf viewer arm" :{
-        "url": "https://github.com/ksharindam/gospel-pdf-viewer/releases/download/v3.2.0/Gospel_PDF-armhf.AppImage",
-        "Verifed": "no"
+        "Verified": "no",
+        "arm64": "https://github.com/ksharindam/gospel-pdf-viewer/releases/download/v3.2.0/Gospel_PDF-armhf.AppImage"
     },
     "Munt" :{
         "url": "https://github.com/muntorg/munt-official/releases/download/v3.0.7/Munt-3.0.7-x64.AppImage",
-        "Verified": "yes"
-    },
-    "Munt arm" :{
-        "url": "https://github.com/muntorg/munt-official/releases/download/v3.0.7/Munt-lite-3.0.7-arm64.AppImage",
-        "Verified": "yes"
+        "Verified": "yes",
+        "arm64": "https://github.com/muntorg/munt-official/releases/download/v3.0.7/Munt-lite-3.0.7-arm64.AppImage"
     },
     "Blender" :{
         "url": "https://github.com/Lethja/blender-appimage/releases/download/2025-08-21/blender-4.5.2-x86_64.AppImage.zip",
@@ -149,19 +137,13 @@ apps = {
     },
     "Gimp" :{
         "url": "https://download.gimp.org/gimp/v3.0/linux/GIMP-3.0.4-x86_64.AppImage",
-        "Verified": "yes"
-    },
-    "Gimp ARM64" :{
-        "url": "https://download.gimp.org/gimp/v3.0/linux/GIMP-3.0.4-aarch64.AppImage",
-        "Verifed": "yes"
+        "Verified": "yes",
+        "arm64": "https://download.gimp.org/gimp/v3.0/linux/GIMP-3.0.4-aarch64.AppImage"
     },
     "Gimp Development Edition" :{
         "url": "https://download.gimp.org/gimp/v3.1/linux/GIMP-3.1.4-x86_64.AppImage",
-        "Verified": "yes"
-    },
-    "Gimp Development Edition ARM" :{
-        "url": "https://download.gimp.org/gimp/v3.1/linux/GIMP-3.1.4-x86_64.AppImage",
-        "Verified": "yes"
+        "Verified": "yes",
+        "arm64": "https://download.gimp.org/gimp/v3.1/linux/GIMP-3.1.4-x86_64.AppImage"
     },
     "Krita" :{
         "url": "https://download.kde.org/stable/krita/5.2.11/krita-5.2.11-x86_64.AppImage",
@@ -225,19 +207,13 @@ apps = {
     },
     "Zen" :{
         "url": "https://github.com/zen-browser/desktop/releases/download/1.15.2b/zen-x86_64.AppImage",
-        "Verified": "yes"
-    },
-    "Zen ARM" :{
-        "url": "https://github.com/zen-browser/desktop/releases/download/1.15.2b/zen-aarch64.AppImage",
-        "Verified": "yes"
+        "Verified": "yes",
+        "arm64": "https://github.com/zen-browser/desktop/releases/download/1.15.2b/zen-aarch64.AppImage"
     },
     "LibreWolf" :{
         "url": "https://gitlab.com/api/v4/projects/24386000/packages/generic/librewolf/142.0.1-1/LibreWolf.x86_64.AppImage",
-        "Verified": "yes"
-    },
-    "LibreWolf ARM" :{
-        "url": "https://gitlab.com/api/v4/projects/24386000/packages/generic/librewolf/142.0.1-1/LibreWolf.aarch64.AppImage",
-        "Verified": "yes"
+        "Verified": "yes",
+        "arm64": "https://gitlab.com/api/v4/projects/24386000/packages/generic/librewolf/142.0.1-1/LibreWolf.aarch64.AppImage"
     },
     "Floorp" :{
         "url": "https://github.com/Portable-Linux-Apps/floorp-AppImage/releases/download/v12.1.3%402025-09-01_1756743432/Floorp-v12.1.3-x86_64.AppImage",
@@ -257,11 +233,8 @@ apps = {
     },
     "Lapce" :{
         "url": "https://github.com/Portable-Linux-Apps/lapce-AppImage/releases/download/v0.4.4%402025-09-01_1756743889/Lapce-v0.4.4-x86_64.AppImage",
-        "Verified": "no"
-    },
-    "Lapce ARM" :{
-        "url": "https://github.com/Portable-Linux-Apps/lapce-AppImage/releases/download/v0.4.4%402025-09-01_1756743889/Lapce-v0.4.4-aarch64.AppImage",
-        "Verified": "no"
+        "Verified": "no",
+        "arm64": "https://github.com/Portable-Linux-Apps/lapce-AppImage/releases/download/v0.4.4%402025-09-01_1756743889/Lapce-v0.4.4-aarch64.AppImage"
     },
     "Ruffle" :{
         "url": "https://github.com/Portable-Linux-Apps/ruffle-AppImage/releases/download/nightly-2025-09-01%402025-09-01_1756743595/Ruffle-nightly-2025-09-01-x86_64.AppImage",
@@ -277,11 +250,8 @@ apps = {
     },
     "Fastfetch" :{
         "url": "https://github.com/Portable-Linux-Apps/fastfetch-AppImage/releases/download/2.51.1%402025-09-01_1756743263/fastfetch-2.51.1-x86_64.AppImage",
-        "Verified": "no"
-    },
-    "Fastfetch ARM" :{
-        "url": "https://github.com/Portable-Linux-Apps/fastfetch-AppImage/releases/download/2.51.1%402025-09-01_1756743263/fastfetch-2.51.1-aarch64.AppImage",
-        "Verified": "no"
+        "Verified": "no",
+        "arm64": "https://github.com/Portable-Linux-Apps/fastfetch-AppImage/releases/download/2.51.1%402025-09-01_1756743263/fastfetch-2.51.1-aarch64.AppImage"
     },
     "Lorien" :{
         "url": "https://github.com/Portable-Linux-Apps/Lorien-AppImage/releases/download/v0.6.0%402025-09-01_1756743231/Lorien-v0.6.0-x86_64.AppImage",
@@ -293,19 +263,13 @@ apps = {
     },
     "FireDragon Catppuccin" :{
         "url": "https://gitlab.com/garuda-linux/firedragon/firedragon12/-/releases/v12.2.1/downloads/firedragon-catppuccin-appimage-x64.AppImage",
-        "Verified": "yes"
-    },
-    "FireDragon Catppuccin ARM" :{
-        "url": "https://gitlab.com/garuda-linux/firedragon/firedragon12/-/releases/v12.2.1/downloads/firedragon-catppuccin-appimage-arm64.AppImage",
-        "Verified": "yes"
+        "Verified": "yes",
+        "arm64": "https://gitlab.com/garuda-linux/firedragon/firedragon12/-/releases/v12.2.1/downloads/firedragon-catppuccin-appimage-arm64.AppImage"
     },
     "FireDragon" :{
         "url": "https://gitlab.com/garuda-linux/firedragon/firedragon12/-/releases/v12.2.1/downloads/firedragon-appimage-x64.AppImage",
-        "Verified": "yes"
-    },
-    "FireDragon ARM" :{
-        "url": "https://gitlab.com/garuda-linux/firedragon/firedragon12/-/releases/v12.2.1/downloads/firedragon-appimage-arm64.AppImage",
-        "Verified": "yes"
+        "Verified": "yes",
+        "arm64": "https://gitlab.com/garuda-linux/firedragon/firedragon12/-/releases/v12.2.1/downloads/firedragon-appimage-arm64.AppImage"
     },
     "InkScape" :{
         "url": "https://inkscape.org/gallery/item/56343/Inkscape-ebf0e94-x86_64.AppImage",
@@ -397,12 +361,10 @@ apps = {
     },
     "Obsidian" :{
         "url": "https://github.com/obsidianmd/obsidian-releases/releases/download/v1.9.12/Obsidian-1.9.12.AppImage",
-        "Verified": "yes"
+        "Verified": "yes",
+        "arm64": "https://github.com/obsidianmd/obsidian-releases/releases/download/v1.9.12/Obsidian-1.9.12-arm64.AppImage"
     },
-    "Obsidian ARM" :{
-        "url": "https://github.com/obsidianmd/obsidian-releases/releases/download/v1.9.12/Obsidian-1.9.12-arm64.AppImage",
-        "Verified": "yes"
-    },
+
     "Wireshark" :{
         "url": "https://github.com/ryuuzaki42/Wireshark_AppImage/releases/download/4.4.8/Wireshark-4.4.8.glibc2.29-x86_64-1_JB.AppImage",
         "Verified": "no"
@@ -441,20 +403,13 @@ apps = {
     },
     "Vivaldi" :{
         "url": "https://github.com/ivan-hc/Vivaldi-appimage/releases/download/continuous/Vivaldi-stable-7.5.3735.66-1-x86_64.AppImage",
-        "Verified": "no"
-    },
-    "Vivaldi ARM" :{
-        "url": "https://github.com/ivan-hc/Vivaldi-appimage/releases/download/continuous/Vivaldi-stable-7.5.3735.66-1-aarch64.AppImage",
-        "Verified": "no"
+        "Verified": "no",
+        "arm64": "https://github.com/ivan-hc/Vivaldi-appimage/releases/download/continuous/Vivaldi-stable-7.5.3735.66-1-aarch64.AppImage"
     },
     "Vivaldi snapshot" :{
         "url": "https://github.com/ivan-hc/Vivaldi-appimage/releases/download/continuous/Vivaldi-snapshot-7.6.3797.27-1-x86_64.AppImage",
-        "Verified": "no"
-    },
-    "Vivaldi snapshot ARM" :{
-        "url": "https://github.com/ivan-hc/Vivaldi-appimage/releases/download/continuous/Vivaldi-snapshot-7.6.3797.27-1-aarch64.AppImage",
-        "Verified": "no"
-    
+        "Verified": "no",
+        "arm64": "https://github.com/ivan-hc/Vivaldi-appimage/releases/download/continuous/Vivaldi-snapshot-7.6.3797.27-1-aarch64.AppImage"
     },
 }
 
@@ -463,7 +418,7 @@ home_directory = os.path.expanduser("~")
 appimage_directory = os.path.join(home_directory, "appimages")
 os.makedirs(appimage_directory, exist_ok=True)
 aim_download = "https://raw.githubusercontent.com/143domi1/aim/refs/heads/main/aim"
-version = 0.2
+version = 0.3
 
 try:
     command = sys.argv[1]
@@ -479,7 +434,20 @@ if command == "install":
         print("ERROR 1 - Please enter the app name!\nIf you need help, please enter the help command")
         sys.exit(1)
     if app in apps:
-        url_download = apps[app]["url"]
+        arhitecture = platform.machine().lower()
+        if arhitecture == "x86_64":
+            url_download = apps[app].get("url")
+        elif arhitecture == "amd64":
+            url_download = apps[app].get("url")
+        elif arhitecture == "aarch64":
+            url_download = apps[app].get("arm64")
+        elif arhitecture == "armv7l":
+            url_download = apps[app].get("arm32")
+        elif arhitecture == "riscv64":
+            url_download = apps[app].get("risc-v")
+        if url_download is None:
+            print(f"Sorry,{app} does not support the {arhitecture} arhitecture you are using.")
+            sys.exit(1)
         filename = os.path.join(appimage_directory, url_download.split("/")[-1])
         if os.path.exists(filename):
             print(f"{app} is already installed.")
@@ -498,7 +466,7 @@ if command == "install":
                 answer = input("Do you wish to continue?\ny - yes,n - no\n")
                 if answer == "y":
                     print("Downloading..(Don't worry if it takes a long time)")
-                    response = requests.get(url_download, stream="True")
+                    response = requests.get(url_download, stream=True)
                     with open(filename, "wb") as f:
                         for chunk in response.iter_content(chunk_size=524288):
                             if chunk:
@@ -508,7 +476,8 @@ if command == "install":
     else: 
         print(f"{app} does not exist.")
 elif command == "info":
-    print(f"AIM – AppImage Installer/Manager \nCopyright (c) 2025 143domi1 (Github username) \nLicensed under the GNU General Public License v3.0 (GPLv3) \nThis program is fully FOSS (Free and open source software). \nLicense details: https://github.com/143domi1/aim/blob/main/LICENSE\nVersion: {version}")
+    arhitecture = platform.machine()
+    print(f"AIM – AppImage Installer/Manager \nCopyright (c) 2025 143domi1 (Github username) \nLicensed under the GNU General Public License v3.0 (GPLv3) \nThis program is fully FOSS (Free and open source software). \nLicense details: https://github.com/143domi1/aim/blob/main/LICENSE\nVersion: {version}\nArhitecture: {arhitecture}")
 
 elif command == "list":
     files = [f for f in os.listdir(appimage_directory) if os.path.isfile(os.path.join(appimage_directory, f))]
@@ -581,6 +550,3 @@ elif command == "help":
     print("aim run <appname> - This command allows you to run apps installed via aim.")
     print("aim help - The help command.")
 
-elif command == "arch":
-    arhitecture = platform.machine()
-    print(f"{arhitecture}")
