@@ -411,6 +411,38 @@ apps = {
         "Verified": "no",
         "arm64": "https://github.com/ivan-hc/Vivaldi-appimage/releases/download/continuous/Vivaldi-snapshot-7.6.3797.27-1-x86_64.AppImage"
     },
+    "Flameshot" :{
+        "url": "https://github.com/flameshot-org/flameshot/releases/download/v13.1.0/Flameshot-13.1.0.x86_64.AppImage",
+        "Verified": "yes"
+    },
+    "Ksnip" :{
+        "url": "https://github.com/ksnip/ksnip/releases/download/continuous/ksnip-1.11.0-continuous-x86_64.AppImage",
+        "Verified": "yes"
+    },
+    "Stacer" :{
+        "url": "https://github.com/oguzhaninan/Stacer/releases/download/v1.1.0/Stacer-1.1.0-x64.AppImage",
+        "Verified": "yes"
+    },
+    "Plexamp" :{
+        "url": "https://github.com/oguzhaninan/Stacer/releases/download/v1.1.0/Stacer-1.1.0-x64.AppImage",
+        "Verified": "yes"
+    },
+    "Simplenote" :{
+        "url": "https://github.com/Automattic/simplenote-electron/releases/download/v2.23.2/Simplenote-linux-2.23.2-x86_64.AppImage",
+        "Verified": "yes",
+        "arm64": "https://github.com/Automattic/simplenote-electron/releases/download/v2.23.2/Simplenote-linux-2.23.2-arm64.AppImage"
+    },
+    "Standard Notes" :{
+        "url": "https://github.com/standardnotes/app/releases/download/%40standardnotes/desktop%403.198.5/standard-notes-3.198.5-linux-x86_64.AppImage",
+        "Verified": "yes"
+    },
+    "Rhythmbox" :{
+        "url": "https://github.com/ivan-hc/Rhythmbox-appimage/releases/download/continuous/Rhythmbox_3.4.8-4-archimage4.3-x86_64.AppImage",
+        "Verified": "no"
+    },
+    "Sayonara" :{
+        "url": "https://sayonara-player.com/files/appimage/sayonara-1.9.0-stable1-ge5e5dfc5.AppImage"
+    },
 }
 
 aim_path = shutil.which("aim")
