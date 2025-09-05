@@ -455,7 +455,8 @@ apps = {
         "url": "https://github.com/ivan-hc/Vivaldi-appimage/releases/download/continuous/Vivaldi-snapshot-7.6.3797.27-1-aarch64.AppImage",
         "Verified": "no"
     
-    }
+    },
+}
 
 aim_path = shutil.which("aim")
 home_directory = os.path.expanduser("~")
