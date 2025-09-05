@@ -186,7 +186,7 @@ apps = {
         "Verified": "no"
     },
     "Brave Nightly" :{
-        "url": "https://github.com/srevinsaju/Brave-AppImage/releases/download/v1.84.29/Brave-nightly-v1.84.29-x86_64.AppImage",
+        "url": "https://github.com/srevinsaju/Brave-AppImage/releases/download/v1.84.31/Brave-nightly-v1.84.31-x86_64.AppImage",
         "Verified": "no"
     },
     "Brave Beta" :{
