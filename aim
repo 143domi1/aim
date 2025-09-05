@@ -570,5 +570,5 @@ elif command == "run":
         print(f"ERROR 3 - {app} is not installed!")
 
 elif command == "help":
-    print("These are all the commands in aim:\naim install <appname> - Installs the specified app.\naim info - Gives information about aim.\naim list - This command lists all appimage programs.\naim delete <appname> - Deletes the specified app.\naim upgrade - This command upgrades aim on your system.\naim applist - This command tells you all the apps currently available in AIM.\naim run <appname> - This command allows you to run apps installed via aim.\naim help - The help command.\n")
+    print("These are all the commands in aim:\naim install <appname> - Installs the specified app.\naim info - Gives information about aim.\naim list - This command lists all appimage programs.\naim delete <appname> - Deletes the specified app.\naim upgrade - This command upgrades aim on your system.\naim applist - This command tells you all the apps currently available in AIM.\naim run <appname> - This command allows you to run apps installed via aim.\naim help - The help command.")
 
