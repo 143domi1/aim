@@ -390,11 +390,11 @@ apps = {
         "Verified": "no"
     },
     "Microsoft Edge" :{
-        "url": "https://github.com/ivan-hc/MS-Edge-appimage/releases/download/continuous/Microsoft-Edge-stable-139.0.3405.125-1-x86_64.AppImage",
+        "url": "https://github.com/ivan-hc/MS-Edge-appimage/releases/download/continuous/Microsoft-Edge-stable-140.0.3485.54-1-x86_64.AppImage",
         "Verified": "no"
     },
     "Microsoft Edge Beta" :{
-        "url": "https://github.com/ivan-hc/MS-Edge-appimage/releases/download/continuous/Microsoft-Edge-beta-140.0.3485.49-1-x86_64.AppImage",
+        "url": "https://github.com/ivan-hc/MS-Edge-appimage/releases/download/continuous/Microsoft-Edge-beta-140.0.3485.54-1-x86_64.AppImage",
         "Verified": "no"
     },
     "Microsoft Edge Dev" :{
@@ -407,9 +407,9 @@ apps = {
         "arm64": "https://github.com/ivan-hc/Vivaldi-appimage/releases/download/continuous/Vivaldi-stable-7.5.3735.66-1-aarch64.AppImage"
     },
     "Vivaldi snapshot" :{
-        "url": "https://github.com/ivan-hc/Vivaldi-appimage/releases/download/continuous/Vivaldi-snapshot-7.6.3797.27-1-x86_64.AppImage",
+        "url": "https://github.com/ivan-hc/Vivaldi-appimage/releases/download/continuous/Vivaldi-snapshot-7.6.3797.28-1-x86_64.AppImage",
         "Verified": "no",
-        "arm64": "https://github.com/ivan-hc/Vivaldi-appimage/releases/download/continuous/Vivaldi-snapshot-7.6.3797.27-1-x86_64.AppImage"
+        "arm64": "https://github.com/ivan-hc/Vivaldi-appimage/releases/download/continuous/Vivaldi-snapshot-7.6.3797.28-1-aarch64.AppImage"
     },
     "Flameshot" :{
         "url": "https://github.com/flameshot-org/flameshot/releases/download/v13.1.0/Flameshot-13.1.0.x86_64.AppImage",
