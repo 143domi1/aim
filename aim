@@ -186,7 +186,7 @@ apps = {
         "Verified": "no"
     },
     "Brave Nightly" :{
-        "url": "https://github.com/srevinsaju/Brave-AppImage/releases/download/v1.84.32/Brave-nightly-v1.84.32-x86_64.AppImage",
+        "url": "https://github.com/srevinsaju/Brave-AppImage/releases/download/v1.84.37/Brave-nightly-v1.84.37-x86_64.AppImage",
         "Verified": "no"
     },
     "Brave Beta" :{
@@ -332,7 +332,7 @@ apps = {
         "Verified": "yes"
     },
     "Handbrake" :{
-        "url": "https://github.com/ivan-hc/Handbrake-appimage/releases/download/continuous/HandBrake_1.10.1-1-archimage4.3-x86_64.AppImage",
+        "url": "https://github.com/ivan-hc/Handbrake-appimage/releases/download/continuous/HandBrake_1.10.2-1-archimage4.3-x86_64.AppImage",
         "Verified": "no"
     },
     "Olive Video Editor" :{
