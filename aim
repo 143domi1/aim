@@ -128,11 +128,11 @@ apps = {
         "arm64": "https://github.com/muntorg/munt-official/releases/download/v3.0.7/Munt-lite-3.0.7-arm64.AppImage"
     },
     "Blender" :{
-        "url": "https://github.com/Lethja/blender-appimage/releases/download/2025-08-21/blender-4.5.2-x86_64.AppImage.zip",
+        "url": "https://github.com/Lethja/blender-appimage/releases/download/2025-09-10/blender-4.5.3-x86_64.AppImage.zip",
         "Verified": "no"
     },
     "Blender LTS" :{
-        "url": "https://github.com/Lethja/blender-appimage/releases/download/2025-08-21/blender-4.2.13-x86_64.AppImage.zip",
+        "url": "https://github.com/Lethja/blender-appimage/releases/download/2025-09-10/blender-4.2.14-x86_64.AppImage.zip",
         "Verified" : "no"
     },
     "Gimp" :{
@@ -174,23 +174,23 @@ apps = {
         "Verified": "no"
     },
     "Google Chrome" :{
-        "url": "https://github.com/ivan-hc/Chrome-appimage/releases/download/continuous/Google-Chrome-stable-140.0.7339.80-1-x86_64.AppImage",
+        "url": "https://github.com/ivan-hc/Chrome-appimage/releases/download/continuous/Google-Chrome-stable-140.0.7339.127-1-x86_64.AppImage",
         "Verified": "no"
     },
     "Google Chrome Beta" :{
-        "url": "https://github.com/ivan-hc/Chrome-appimage/releases/download/continuous/Google-Chrome-beta-141.0.7390.7-1-x86_64.AppImage",
+        "url": "https://github.com/ivan-hc/Chrome-appimage/releases/download/continuous/Google-Chrome-beta-141.0.7390.16-1-x86_64.AppImage",
         "Verified": "no"
     },
     "Google Chrome Unstable" :{
-        "url": "https://github.com/ivan-hc/Chrome-appimage/releases/download/continuous/Google-Chrome-unstable-141.0.7378.3-1-x86_64.AppImage",
+        "url": "https://github.com/ivan-hc/Chrome-appimage/releases/download/continuous/Google-Chrome-unstable-142.0.7405.0-1-x86_64.AppImage",
         "Verified": "no"
     },
     "Brave Nightly" :{
-        "url": "https://github.com/srevinsaju/Brave-AppImage/releases/download/v1.84.37/Brave-nightly-v1.84.37-x86_64.AppImage",
+        "url": "https://github.com/srevinsaju/Brave-AppImage/releases/download/v1.84.55/Brave-nightly-v1.84.55-x86_64.AppImage",
         "Verified": "no"
     },
     "Brave Beta" :{
-        "url": "https://github.com/srevinsaju/Brave-AppImage/releases/download/v1.83.90/Brave-beta-v1.83.90-x86_64.AppImage",
+        "url": "https://github.com/srevinsaju/Brave-AppImage/releases/download/v1.83.96/Brave-beta-v1.83.96-x86_64.AppImage",
         "Verified": "no"
     },
     "Brave" :{
@@ -224,7 +224,7 @@ apps = {
         "Verified": "no"
     },
     "Palemoon" :{
-        "url": "https://github.com/Portable-Linux-Apps/palemoon-AppImage/releases/download/33.8.2%402025-09-01_1756744100/Pale_Moon-33.8.2-x86_64.AppImage",
+        "url": "https://github.com/Portable-Linux-Apps/palemoon-AppImage/releases/download/33.8.2%402025-09-08_1757348911/Pale_Moon-33.8.2-x86_64.AppImage",
         "Verified": "no"
     },
     "Mullvad" :{
@@ -296,7 +296,7 @@ apps = {
         "Verified": "no"
     },
     "Virtual Box" :{
-        "url": "https://github.com/ivan-hc/VirtualBox-appimage/releases/download/20250904-142056/VirtualBox-KVM_7.2.0-archimage4.3-x86_64.AppImage",
+        "url": "https://github.com/ivan-hc/VirtualBox-appimage/releases/download/20250911-142103/VirtualBox-KVM_7.2.0-archimage4.3-x86_64.AppImage",
         "Verified": "no"
     },
     "Discord" :{
@@ -352,7 +352,7 @@ apps = {
         "Verified": "yes"
     },
     "Calibre" :{
-        "url": "https://github.com/KushagraKarira/calibre-appimage/releases/download/v8.4.0/Calibre-8.4.0-x86_64.AppImage",
+        "url": "https://github.com/KushagraKarira/calibre-appimage/releases/download/v8.10.0/Calibre-8.10.0-x86_64.AppImage",
         "Verified": "no"
     },
     "Zotero" :{
@@ -398,7 +398,7 @@ apps = {
         "Verified": "no"
     },
     "Microsoft Edge Dev" :{
-        "url": "https://github.com/ivan-hc/MS-Edge-appimage/releases/download/continuous/Microsoft-Edge-dev-141.0.3525.0-1-x86_64.AppImage",
+        "url": "https://github.com/ivan-hc/MS-Edge-appimage/releases/download/continuous/Microsoft-Edge-dev-141.0.3537.9-1-x86_64.AppImage",
         "Verified": "no"
     },
     "Vivaldi" :{
@@ -407,9 +407,9 @@ apps = {
         "arm64": "https://github.com/ivan-hc/Vivaldi-appimage/releases/download/continuous/Vivaldi-stable-7.5.3735.66-1-aarch64.AppImage"
     },
     "Vivaldi snapshot" :{
-        "url": "https://github.com/ivan-hc/Vivaldi-appimage/releases/download/continuous/Vivaldi-snapshot-7.6.3797.28-1-x86_64.AppImage",
+        "url": "https://github.com/ivan-hc/Vivaldi-appimage/releases/download/continuous/Vivaldi-snapshot-7.6.3797.35-1-x86_64.AppImage",
         "Verified": "no",
-        "arm64": "https://github.com/ivan-hc/Vivaldi-appimage/releases/download/continuous/Vivaldi-snapshot-7.6.3797.28-1-aarch64.AppImage"
+        "arm64": "https://github.com/ivan-hc/Vivaldi-appimage/releases/download/continuous/Vivaldi-snapshot-7.6.3797.35-1-aarch64.AppImage"
     },
     "Flameshot" :{
         "url": "https://github.com/flameshot-org/flameshot/releases/download/v13.1.0/Flameshot-13.1.0.x86_64.AppImage",
