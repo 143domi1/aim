@@ -27,8 +27,9 @@ os.makedirs(aim_directory, exist_ok=True)
 aim_download = "https://raw.githubusercontent.com/143domi1/aim/refs/heads/main/aim"
 database_download = "https://raw.githubusercontent.com/143domi1/aim/refs/heads/main/database.json"
 version = 0.5
-database_path = os.path.expanduser("~/.local/share/aim") 
+database_path = os.path.expanduser("~/.local/share/aim/database.json")
 database_path_global = "/var/lib/aim/database.json"
+upgrade_database = requests.get(database_download, stream=True)
 paths_for_db = [
     os.path.expanduser("~/.local/share/aim/database.json"),
     "/var/lib/aim/database.json"
@@ -39,7 +40,7 @@ for path in paths_for_db:
         db_path = path
         break
 try:
-    with open("database.json", "r") as apps:
+    with open(database_path, "r") as apps:
         data = json.load(apps)
 except FileNotFoundError:
     print("Critical error - Database file has not been found\nWould you like to download it?\n1. Download the database file\n2. Exit the program")
