@@ -39,9 +39,10 @@ for path in paths_for_db:
     if os.path.exists(path):
         db_path = path
         break
+
 try:
     with open(database_path, "r") as apps:
-        data = json.load(apps)
+        apps = json.load(apps)
 except FileNotFoundError:
     print("Critical error - Database file has not been found\nWould you like to download it?\n1. Download the database file\n2. Exit the program")
     answer = input()
@@ -180,6 +181,8 @@ elif command == "applist":
     question = input("Are you sure you want to see the whole applist of AIM?\ny - yes, n - no\n")
     question.lower()
     if question == "y":
+        with open(database_path, "r") as apps:
+            apps = json.load(apps)
         for app in apps:
             print(f"{app}")
     elif question == "n":
