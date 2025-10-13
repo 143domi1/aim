@@ -24,8 +24,47 @@ appimage_directory = os.path.join(home_directory, "appimages")
 aim_directory = os.path.join(share_directory, "aim") 
 os.makedirs(appimage_directory, exist_ok=True)
 os.makedirs(aim_directory, exist_ok=True)
+settings_download = "https://raw.githubusercontent.com/143domi1/aim/refs/heads/main/settings.json"
 aim_download = "https://raw.githubusercontent.com/143domi1/aim/refs/heads/main/aim"
-database_download = "https://raw.githubusercontent.com/143domi1/aim/refs/heads/main/database.json"
+settings_pathh = os.path.expanduser("~/.local/share/aim/settings.json")
+settings_path_global = "/var/lib/aim/settings.json" 
+download_settings = requests.get(settings_download, stream=True)
+paths_for_settings = [
+    os.path.expanduser("~/.local/share/aim/settings.json"),
+    "/var/lib/aim/settings.json"
+]
+settings_path = None
+for spath in paths_for_settings:
+    if os.path.exists(spath):
+        settings_path = spath 
+        break
+try:
+    if settings_path is None:
+        raise FileNotFoundError("No settings file found.")
+    with open(settings_path, "r") as settings:
+        settings = json.load(settings)
+        database_download = settings["url"]
+except FileNotFoundError:
+    print("Settings file has not been found!\nWould you like to download it?\n1.Download the settings file\n2.Exit the program")
+    users_answer = input()
+    if users_answer == "1":
+        print("Where do you want it to be placed?\n1 for global\n2 for user")
+        users_answer_for_path_for_settings = input()
+        if users_answer_for_path_for_settings == "1":
+            settings_response = requests.get(settings_download, stream=True)
+            with open(settings_path_global, "wb") as f:
+                for chunk in settings_response.iter_content(chunk_size=128):
+                    if chunk:
+                        f.write(chunk)
+        elif users_answer_for_path_for_settings == "2":
+            settings_response = requests.get(settings_download, stream=True)
+            with open(settings_pathh, "wb") as f:
+                for chunk in settings_response.iter_content(chunk_size=128):
+                    if chunk:
+                        f.write(chunk)
+        print("Settings has successfuly been installed")
+    elif users_answer == "2":
+        sys.exit(1)
 version = 0.5
 database_path = os.path.expanduser("~/.local/share/aim/database.json")
 database_path_global = "/var/lib/aim/database.json"
@@ -120,7 +159,7 @@ if command == "install":
         print(f"{app} does not exist.")
 elif command == "info":
     architecture = platform.machine()
-    print(f"AIM – AppImage Installer/Manager \nCopyright (c) 2025 143domi1 (Github username) \nLicensed under the GNU General Public License v3.0 (GPLv3) \nThis program is fully FOSS (Free and open source software). \nLicense details: https://github.com/143domi1/aim/blob/main/LICENSE\nVersion: {version}\nArchitecture: {architecture}")
+    print(f"AIM – AppImage Installer/Manager \nCopyright (c) 2025 143domi1 (Github username) \nLicensed under the GNU General Public License v3.0 (GPLv3) \nThis program is fully FOSS (Free and open source software). \nLicense details: https://github.com/143domi1/aim/blob/main/LICENSE\nRepository: {settings["url"]}\nVersion: {version}\nArchitecture: {architecture}")
 
 elif command == "list":
     files = [f for f in os.listdir(appimage_directory) if os.path.isfile(os.path.join(appimage_directory, f))]
