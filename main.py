@@ -65,7 +65,7 @@ except FileNotFoundError:
         print("Settings has successfuly been installed")
     elif users_answer == "2":
         sys.exit(1)
-version = 0.5
+version = 0.6
 database_path = os.path.expanduser("~/.local/share/aim/database.json")
 database_path_global = "/var/lib/aim/database.json"
 upgrade_database = requests.get(database_download, stream=True)
