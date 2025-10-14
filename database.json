@@ -116,21 +116,21 @@
         "Verified": "no"
     },
     "Gimp": {
-        "url": "https://download.gimp.org/gimp/v3.0/linux/GIMP-3.0.4-x86_64.AppImage",
+        "url": "https://download.gimp.org/gimp/v3.0/linux/GIMP-3.0.6-x86_64.AppImage",
         "Verified": "yes",
-        "arm64": "https://download.gimp.org/gimp/v3.0/linux/GIMP-3.0.4-aarch64.AppImage"
+        "arm64": "https://download.gimp.org/gimp/v3.0/linux/GIMP-3.0.6-aarch64.AppImage"
     },
     "Gimp Development Edition": {
         "url": "https://download.gimp.org/gimp/v3.1/linux/GIMP-3.1.4-x86_64.AppImage",
         "Verified": "yes",
-        "arm64": "https://download.gimp.org/gimp/v3.1/linux/GIMP-3.1.4-x86_64.AppImage"
+        "arm64": "https://download.gimp.org/gimp/v3.1/linux/GIMP-3.1.4-aarch64.AppImage"
     },
     "Krita": {
-        "url": "https://download.kde.org/stable/krita/5.2.11/krita-5.2.11-x86_64.AppImage",
+        "url": "https://download.kde.org/stable/krita/5.2.13/krita-5.2.13-x86_64.AppImage",
         "Verified": "yes"
     },
     "Krita Plus Nightly": {
-        "url": "https://cdn.kde.org/ci-builds/graphics/krita/krita-5.2/linux/krita-5.2.13-prealpha-4f376aba8d-x86_64.AppImage",
+        "url": "https://cdn.kde.org/ci-builds/graphics/krita/krita-5.2/linux/krita-5.2.14-prealpha-3e4b3ef1e8-x86_64.AppImage",
         "Verified": "yes"
     },
     "Firefox": {
@@ -154,27 +154,27 @@
         "Verified": "no"
     },
     "Google Chrome": {
-        "url": "https://github.com/ivan-hc/Chrome-appimage/releases/download/continuous/Google-Chrome-stable-140.0.7339.127-1-x86_64.AppImage",
+        "url": "https://github.com/ivan-hc/Chrome-appimage/releases/download/continuous/Google-Chrome-stable-141.0.7390.76-1-x86_64.AppImage",
         "Verified": "no"
     },
     "Google Chrome Beta": {
-        "url": "https://github.com/ivan-hc/Chrome-appimage/releases/download/continuous/Google-Chrome-beta-141.0.7390.16-1-x86_64.AppImage",
+        "url": "https://github.com/ivan-hc/Chrome-appimage/releases/download/continuous/Google-Chrome-beta-142.0.7444.23-1-x86_64.AppImage",
         "Verified": "no"
     },
     "Google Chrome Unstable": {
-        "url": "https://github.com/ivan-hc/Chrome-appimage/releases/download/continuous/Google-Chrome-unstable-142.0.7405.0-1-x86_64.AppImage",
+        "url": "https://github.com/ivan-hc/Chrome-appimage/releases/download/continuous/Google-Chrome-unstable-143.0.7461.2-1-x86_64.AppImage",
         "Verified": "no"
     },
     "Brave Nightly": {
-        "url": "https://github.com/srevinsaju/Brave-AppImage/releases/download/v1.84.55/Brave-nightly-v1.84.55-x86_64.AppImage",
+        "url": "https://github.com/srevinsaju/Brave-AppImage/releases/download/v1.85.54/Brave-nightly-v1.85.54-x86_64.AppImage",
         "Verified": "no"
     },
     "Brave Beta": {
-        "url": "https://github.com/srevinsaju/Brave-AppImage/releases/download/v1.83.96/Brave-beta-v1.83.96-x86_64.AppImage",
+        "url": "https://github.com/srevinsaju/Brave-AppImage/releases/download/v1.84.121/Brave-beta-v1.84.121-x86_64.AppImage",
         "Verified": "no"
     },
     "Brave": {
-        "url": "https://github.com/srevinsaju/Brave-AppImage/releases/download/v1.82.159/Brave-stable-v1.82.159-x86_64.AppImage",
+        "url": "https://github.com/srevinsaju/Brave-AppImage/releases/download/v1.83.116/Brave-stable-v1.83.116-x86_64.AppImage",
         "Verified": "no"
     },
     "htop": {
@@ -204,11 +204,11 @@
         "Verified": "no"
     },
     "Palemoon": {
-        "url": "https://github.com/Portable-Linux-Apps/palemoon-AppImage/releases/download/33.8.2%402025-09-08_1757348911/Pale_Moon-33.8.2-x86_64.AppImage",
+        "url": "https://github.com/Portable-Linux-Apps/palemoon-AppImage/releases/download/33.9.0.1%402025-10-08_1759940992/Pale_Moon-33.9.0.1-x86_64.AppImage",
         "Verified": "no"
     },
     "Mullvad": {
-        "url": "https://github.com/Portable-Linux-Apps/mullvad-browser-AppImage/releases/download/14.5.6%402025-09-01_1756743924/Mullvad_Browser-14.5.6-x86_64.AppImage",
+        "url": "https://github.com/Portable-Linux-Apps/mullvad-browser-AppImage/releases/download/14.5.7%402025-10-08_1759940802/Mullvad_Browser-14.5.7-x86_64.AppImage",
         "Verified": "no"
     },
     "Lapce": {
@@ -221,17 +221,17 @@
         "Verified": "no"
     },
     "Waterfox": {
-        "url": "https://github.com/Portable-Linux-Apps/Waterfox-AppImage/releases/download/140.3.0%402025-09-01_1756743590/Waterfox-140.3.0-x86_64.AppImage",
+        "url": "https://github.com/Portable-Linux-Apps/Waterfox-AppImage/releases/download/140.3.0%402025-10-08_1759940464/Waterfox-140.3.0-x86_64.AppImage",
         "Verified": "no"
     },
     "Telegram": {
-        "url": "https://github.com/Portable-Linux-Apps/Telegram-AppImage/releases/download/v6.1.0%402025-09-01_1756743380/Telegram-v6.1.0-x86_64.AppImage",
+        "url": "https://github.com/Portable-Linux-Apps/Telegram-AppImage/releases/download/v6.1.4%402025-10-08_1759940159/Telegram-v6.1.4-x86_64.AppImage",
         "Verified": "no"
     },
     "Fastfetch": {
-        "url": "https://github.com/Portable-Linux-Apps/fastfetch-AppImage/releases/download/2.51.1%402025-09-01_1756743263/fastfetch-2.51.1-x86_64.AppImage",
+        "url": "https://github.com/Portable-Linux-Apps/fastfetch-AppImage/releases/download/2.53.0%402025-10-08_1759940175/fastfetch-2.53.0-x86_64.AppImage",
         "Verified": "no",
-        "arm64": "https://github.com/Portable-Linux-Apps/fastfetch-AppImage/releases/download/2.51.1%402025-09-01_1756743263/fastfetch-2.51.1-aarch64.AppImage"
+        "arm64": "https://github.com/Portable-Linux-Apps/fastfetch-AppImage/releases/download/2.53.0%402025-10-08_1759940175/fastfetch-2.53.0-aarch64.AppImage"
     },
     "Lorien": {
         "url": "https://github.com/Portable-Linux-Apps/Lorien-AppImage/releases/download/v0.6.0%402025-09-01_1756743231/Lorien-v0.6.0-x86_64.AppImage",
@@ -304,15 +304,16 @@
         "Verified": "yes"
     },
     "QEMU": {
-        "url": "https://github.com/DanielMYT/qemu-appimage/releases/download/10.1.0/qemu-10.1.0-x86_64.AppImage",
-        "Verified": "no"
+        "url": "https://github.com/DanielMYT/qemu-appimage/releases/download/10.1.1/qemu-10.1.1-x86_64.AppImage",
+        "Verified": "no",
+        "arm64": "https://github.com/DanielMYT/qemu-appimage/releases/download/10.1.1/qemu-10.1.1-aarch64.AppImage"
     },
     "Darktable": {
         "url": "https://github.com/darktable-org/darktable/releases/download/release-5.2.1/Darktable-5.2.1-x86_64.AppImage",
         "Verified": "yes"
     },
     "Handbrake": {
-        "url": "https://github.com/ivan-hc/Handbrake-appimage/releases/download/continuous/HandBrake_1.10.2-1-archimage4.3-x86_64.AppImage",
+        "url": "https://github.com/ivan-hc/Handbrake-appimage/releases/download/continuous/HandBrake_1.10.2-4-archimage4.3-x86_64.AppImage",
         "Verified": "no"
     },
     "Olive Video Editor": {
@@ -369,26 +370,26 @@
         "Verified": "no"
     },
     "Microsoft Edge": {
-        "url": "https://github.com/ivan-hc/MS-Edge-appimage/releases/download/continuous/Microsoft-Edge-stable-140.0.3485.54-1-x86_64.AppImage",
+        "url": "https://github.com/ivan-hc/MS-Edge-appimage/releases/download/continuous/Microsoft-Edge-stable-141.0.3537.71-1-x86_64.AppImage",
         "Verified": "no"
     },
     "Microsoft Edge Beta": {
-        "url": "https://github.com/ivan-hc/MS-Edge-appimage/releases/download/continuous/Microsoft-Edge-beta-140.0.3485.54-1-x86_64.AppImage",
+        "url": "https://github.com/ivan-hc/MS-Edge-appimage/releases/download/continuous/Microsoft-Edge-beta-142.0.3595.11-1-x86_64.AppImage",
         "Verified": "no"
     },
     "Microsoft Edge Dev": {
-        "url": "https://github.com/ivan-hc/MS-Edge-appimage/releases/download/continuous/Microsoft-Edge-dev-141.0.3537.9-1-x86_64.AppImage",
+        "url": "https://github.com/ivan-hc/MS-Edge-appimage/releases/download/continuous/Microsoft-Edge-dev-142.0.3595.7-1-x86_64.AppImage",
         "Verified": "no"
     },
     "Vivaldi": {
-        "url": "https://github.com/ivan-hc/Vivaldi-appimage/releases/download/continuous/Vivaldi-stable-7.5.3735.66-1-x86_64.AppImage",
+        "url": "https://github.com/ivan-hc/Vivaldi-appimage/releases/download/continuous/Vivaldi-stable-7.6.3797.63-1-x86_64.AppImage",
         "Verified": "no",
-        "arm64": "https://github.com/ivan-hc/Vivaldi-appimage/releases/download/continuous/Vivaldi-stable-7.5.3735.66-1-aarch64.AppImage"
+        "arm64": "https://github.com/ivan-hc/Vivaldi-appimage/releases/download/continuous/Vivaldi-stable-7.6.3797.63-1-aarch64.AppImage"
     },
     "Vivaldi snapshot": {
-        "url": "https://github.com/ivan-hc/Vivaldi-appimage/releases/download/continuous/Vivaldi-snapshot-7.6.3797.35-1-x86_64.AppImage",
+        "url": "https://github.com/ivan-hc/Vivaldi-appimage/releases/download/continuous/Vivaldi-snapshot-7.7.3832.3-1-x86_64.AppImage",
         "Verified": "no",
-        "arm64": "https://github.com/ivan-hc/Vivaldi-appimage/releases/download/continuous/Vivaldi-snapshot-7.6.3797.35-1-aarch64.AppImage"
+        "arm64": "https://github.com/ivan-hc/Vivaldi-appimage/releases/download/continuous/Vivaldi-snapshot-7.7.3832.3-1-aarch64.AppImage"
     },
     "Flameshot": {
         "url": "https://github.com/flameshot-org/flameshot/releases/download/v13.1.0/Flameshot-13.1.0.x86_64.AppImage",
