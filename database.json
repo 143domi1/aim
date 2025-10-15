@@ -154,7 +154,7 @@
         "Verified": "no"
     },
     "Google Chrome": {
-        "url": "https://github.com/ivan-hc/Chrome-appimage/releases/download/continuous/Google-Chrome-stable-141.0.7390.76-1-x86_64.AppImage",
+        "url": "https://github.com/ivan-hc/Chrome-appimage/releases/download/continuous/Google-Chrome-stable-141.0.7390.107-1-x86_64.AppImage",
         "Verified": "no"
     },
     "Google Chrome Beta": {
@@ -166,7 +166,7 @@
         "Verified": "no"
     },
     "Brave Nightly": {
-        "url": "https://github.com/srevinsaju/Brave-AppImage/releases/download/v1.85.54/Brave-nightly-v1.85.54-x86_64.AppImage",
+        "url": "https://github.com/srevinsaju/Brave-AppImage/releases/download/v1.85.58/Brave-nightly-v1.85.58-x86_64.AppImage",
         "Verified": "no"
     },
     "Brave Beta": {
