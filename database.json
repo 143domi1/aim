@@ -170,11 +170,11 @@
         "Verified": "no"
     },
     "Brave Beta": {
-        "url": "https://github.com/srevinsaju/Brave-AppImage/releases/download/v1.84.122/Brave-beta-v1.84.122-x86_64.AppImage",
+        "url": "https://github.com/srevinsaju/Brave-AppImage/releases/download/v1.84.123/Brave-beta-v1.84.123-x86_64.AppImage",
         "Verified": "no"
     },
     "Brave": {
-        "url": "https://github.com/srevinsaju/Brave-AppImage/releases/download/v1.83.116/Brave-stable-v1.83.116-x86_64.AppImage",
+        "url": "https://github.com/srevinsaju/Brave-AppImage/releases/download/v1.83.118/Brave-stable-v1.83.118-x86_64.AppImage",
         "Verified": "no"
     },
     "htop": {
@@ -204,11 +204,11 @@
         "Verified": "no"
     },
     "Palemoon": {
-        "url": "https://github.com/Portable-Linux-Apps/palemoon-AppImage/releases/download/33.9.0.1%402025-10-08_1759940992/Pale_Moon-33.9.0.1-x86_64.AppImage",
+        "url": "https://github.com/Portable-Linux-Apps/palemoon-AppImage/releases/download/33.9.0.1%402025-10-15_1760545639/Pale_Moon-33.9.0.1-x86_64.AppImage",
         "Verified": "no"
     },
     "Mullvad": {
-        "url": "https://github.com/Portable-Linux-Apps/mullvad-browser-AppImage/releases/download/14.5.7%402025-10-08_1759940802/Mullvad_Browser-14.5.7-x86_64.AppImage",
+        "url": "https://github.com/Portable-Linux-Apps/mullvad-browser-AppImage/releases/download/14.5.8%402025-10-15_1760545427/Mullvad_Browser-14.5.8-x86_64.AppImage",
         "Verified": "no"
     },
     "Lapce": {
@@ -221,17 +221,17 @@
         "Verified": "no"
     },
     "Waterfox": {
-        "url": "https://github.com/Portable-Linux-Apps/Waterfox-AppImage/releases/download/140.3.0%402025-10-08_1759940464/Waterfox-140.3.0-x86_64.AppImage",
+        "url": "https://github.com/Portable-Linux-Apps/Waterfox-AppImage/releases/download/140.4.0%402025-10-15_1760545099/Waterfox-140.4.0-x86_64.AppImage",
         "Verified": "no"
     },
     "Telegram": {
-        "url": "https://github.com/Portable-Linux-Apps/Telegram-AppImage/releases/download/v6.1.4%402025-10-08_1759940159/Telegram-v6.1.4-x86_64.AppImage",
+        "url": "https://github.com/Portable-Linux-Apps/Telegram-AppImage/releases/download/v6.2.3%402025-10-15_1760544838/Telegram-v6.2.3-x86_64.AppImage",
         "Verified": "no"
     },
     "Fastfetch": {
-        "url": "https://github.com/Portable-Linux-Apps/fastfetch-AppImage/releases/download/2.53.0%402025-10-08_1759940175/fastfetch-2.53.0-x86_64.AppImage",
+        "url": "https://github.com/Portable-Linux-Apps/fastfetch-AppImage/releases/download/2.53.0%402025-10-15_1760544812/fastfetch-2.53.0-x86_64.AppImage",
         "Verified": "no",
-        "arm64": "https://github.com/Portable-Linux-Apps/fastfetch-AppImage/releases/download/2.53.0%402025-10-08_1759940175/fastfetch-2.53.0-aarch64.AppImage"
+        "arm64": "https://github.com/Portable-Linux-Apps/fastfetch-AppImage/releases/download/2.53.0%402025-10-15_1760544812/fastfetch-2.53.0-aarch64.AppImage"
     },
     "Lorien": {
         "url": "https://github.com/Portable-Linux-Apps/Lorien-AppImage/releases/download/v0.6.0%402025-09-01_1756743231/Lorien-v0.6.0-x86_64.AppImage",
