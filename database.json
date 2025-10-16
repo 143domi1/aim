@@ -158,7 +158,7 @@
         "Verified": "no"
     },
     "Google Chrome Beta": {
-        "url": "https://github.com/ivan-hc/Chrome-appimage/releases/download/continuous/Google-Chrome-beta-142.0.7444.23-1-x86_64.AppImage",
+        "url": "https://github.com/ivan-hc/Chrome-appimage/releases/download/continuous/Google-Chrome-beta-142.0.7444.34-1-x86_64.AppImage",
         "Verified": "no"
     },
     "Google Chrome Unstable": {
@@ -166,11 +166,11 @@
         "Verified": "no"
     },
     "Brave Nightly": {
-        "url": "https://github.com/srevinsaju/Brave-AppImage/releases/download/v1.85.58/Brave-nightly-v1.85.58-x86_64.AppImage",
+        "url": "https://github.com/srevinsaju/Brave-AppImage/releases/download/v1.85.63/Brave-nightly-v1.85.63-x86_64.AppImage",
         "Verified": "no"
     },
     "Brave Beta": {
-        "url": "https://github.com/srevinsaju/Brave-AppImage/releases/download/v1.84.123/Brave-beta-v1.84.123-x86_64.AppImage",
+        "url": "https://github.com/srevinsaju/Brave-AppImage/releases/download/v1.84.124/Brave-beta-v1.84.124-x86_64.AppImage",
         "Verified": "no"
     },
     "Brave": {
@@ -378,7 +378,7 @@
         "Verified": "no"
     },
     "Microsoft Edge Dev": {
-        "url": "https://github.com/ivan-hc/MS-Edge-appimage/releases/download/continuous/Microsoft-Edge-dev-142.0.3595.7-1-x86_64.AppImage",
+        "url": "https://github.com/ivan-hc/MS-Edge-appimage/releases/download/continuous/Microsoft-Edge-dev-143.0.3614.1-1-x86_64.AppImage",
         "Verified": "no"
     },
     "Vivaldi": {
